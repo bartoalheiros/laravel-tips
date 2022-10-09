@@ -16,6 +16,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('listagem-usuario', 'UserController@listUser');
+Route::get('listagem-usuario', 'UserController@listUser');
 
-//Route::get('usuarios', 'Form\\TestController@listAllUsers')->name('users.listAll');
+Route::get('usuarios', 'Form\\TestController@listAllUsers')->name('users.listAll');
