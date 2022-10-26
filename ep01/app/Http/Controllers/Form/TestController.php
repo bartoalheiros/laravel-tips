@@ -11,6 +11,9 @@ class TestController extends Controller
     public function listAllUsers()
     {
         $users = User::all();
-        dd($users);
+
+        return view('listAllUsers', [
+            'users' => $users
+        ]);
     }
 }
