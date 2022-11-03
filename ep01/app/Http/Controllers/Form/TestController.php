@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Form;
 
 use App\Http\Controllers\Controller;
 use App\User;
-use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
@@ -15,5 +14,17 @@ class TestController extends Controller
         return view('listAllUsers', [
             'users' => $users
         ]);
+    }
+
+    public function listUser(User $user)
+    {
+        return view('listUser', [
+            'user' => $user
+        ]);
+    }
+
+    public function formAddUser(User $user)
+    {
+        return view('addUser');
     }
 }
