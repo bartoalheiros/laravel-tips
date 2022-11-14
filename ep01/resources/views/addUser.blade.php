@@ -7,16 +7,18 @@
     <title>Cadastro de Usuário</title>
 </head>
 <body>
-<form action="" method="post"></form>
+<form action="{{ route('users.store') }}" method="post">
+    @csrf
     <label for="">Nome do usuário:</label>
-    <input type="text" name="nome">
+    <input type="text" name="name">
 
     <label for="">E-mail do usuário:</label>
     <input type="email" name="email">
 
     <label for="">Senha do usuário:</label>
-    <input type="text" name="senha">
+    <input type="text" name="password">
 
     <input type="submit" value="Cadastrar usuário">
+</form>
 </body>
 </html>

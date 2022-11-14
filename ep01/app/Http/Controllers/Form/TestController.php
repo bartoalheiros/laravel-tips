@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Form;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
@@ -26,5 +27,15 @@ class TestController extends Controller
     public function formAddUser(User $user)
     {
         return view('addUser');
+    }
+
+    public function storeUser(Request $request)
+    {
+        $user = new User();
+        $user->name = $request->nome;
+        $user->email = $request->email;
+        $user->password = $request->senha;
+        $user->save();
+        return redirect()->route('users.listAll');
     }
 }

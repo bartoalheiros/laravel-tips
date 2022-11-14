@@ -24,3 +24,4 @@ Route::get('usuarios/novo', 'Form\\TestController@formAddUser')->name('users.for
 Route::get('usuarios/{user}', 'Form\\TestController@listUser')->name('users.list');
 
 /* VERBO POST */
+Route::post('usuarios/store', 'Form\\TestController@storeUser')->name('users.store');
