@@ -32,9 +32,9 @@ class TestController extends Controller
     public function storeUser(Request $request)
     {
         $user = new User();
-        $user->name = $request->nome;
+        $user->name = $request->name;
         $user->email = $request->email;
-        $user->password = $request->senha;
+        $user->password = $request->password;
         $user->save();
         return redirect()->route('users.listAll');
     }
