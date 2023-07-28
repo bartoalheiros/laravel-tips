@@ -1,2 +1,2 @@
 # laravel-tips
-Repositório para curso de Introdutório de Laravel
+Repositório para curso de Introdutório de Laravel.
