@@ -1,2 +1,2 @@
 # laravel-tips
-Repositório para o curso de Introdução ao Laravel do canal de Robson V. Leite
+Repositório para curso de Introdutório de Laravel
